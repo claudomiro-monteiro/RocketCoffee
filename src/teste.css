@@ -1,0 +1,130 @@
+#container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    background: var(--backgrond);
+}
+
+#container .sidenav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+    height: 100%;
+
+    background-color: #000;
+
+    z-index: 10;
+}
+
+#container .sidenav .logo-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+#container .sidenav nav ul {
+    display: flex;
+    flex-flow: column;
+    list-style: none;
+    margin-top: 2.6rem;
+}
+
+/* #container nav ul hr {
+    border: 1px solid #29292E;
+} */
+
+#container .sidenav nav ul li {
+    display: flex;
+    /* line-height: 2.5rem; */
+    font: normal bold 1.8rem/2.5rem 'Manrope', sans-serif;
+    padding: 2.5rem;
+    color: var(--text-color-menu-mobile);
+    border-bottom: 1px solid #29292E;
+}
+
+#container .sidenav nav ul li:nth-child(1) {
+    border-left: 5px solid var(--button);
+    border-top: 1px solid #29292E;
+} 
+
+#container .sidenav nav ul li:last-child {
+    justify-content: center;
+    margin-top: 5rem;
+    border: none;
+    
+}
+
+#container .sidenav nav ul li a {
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+
+    border: 1px solid #8257E5;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+#container .sidenav nav {
+    display: none;
+}
+
+#container main .text-mobile {
+    font: normal 600 3rem/4.1rem 'Manrope', sans-serif;
+    text-align: center;
+    letter-spacing: 0.02em;
+    padding: 2.8rem;
+    color: #FFFFFF;
+}
+
+#container main p {
+    font: normal bold 5rem/6.8rem 'Manrope', sans-serif;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+    color: var(--text-color);
+}
+
+#container main button {
+    text-decoration: none;
+    color: var(--text-color);
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 10rem 0;
+
+    border: 1px solid var(--button);
+    box-sizing: border-box;
+    border-radius: 6px;
+    background: transparent;
+}
+
+#container main img {
+    height: 245.47px;
+   
+    margin-bottom: auto;
+}
+
+#container main code {
+    font: normal bold 5rem/6.8rem 'Manrope', sans-serif;
+    /* identical to box height */
+    letter-spacing: -0.03em;
+    color: var(--backgrond);
+
+    text-shadow: -1px -1px 0 var(--button), 
+    1px -1px 0 var(--button), 
+    -1px 1px 0 var(--button), 
+    1px 1px 0 var(--button);
+}
